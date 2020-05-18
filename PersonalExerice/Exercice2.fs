@@ -14,12 +14,12 @@ let fizzBuzzTuple = fun n ->
     | 0,_ -> string "Fizz"
     | _ -> string n
     
-let testFunc1 = fun x ->
+let testArrayFunc = fun x ->
     [0..20]
         |> Seq.map (fizzBuzz)
         |> Seq.iter (printfn "%s")
         
-testFunc1 2
+testArrayFunc 2
     
     
 //for i in 1..20 do
