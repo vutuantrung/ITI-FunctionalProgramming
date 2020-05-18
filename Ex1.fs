@@ -6,7 +6,7 @@ let isDividable =
 
 // With for:
 for x in 1..100 do
-//    isDividable x |> (printfn "%s")
+   isDividable x |> (printfn "%s")
 
 // With Seq:
 [1..100]
