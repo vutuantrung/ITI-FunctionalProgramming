@@ -18,16 +18,14 @@ let testArrayFunc = fun x ->
     [0..20]
         |> Seq.map (fizzBuzz)
         |> Seq.iter (printfn "%s")
-        
-testArrayFunc 2
     
-    
-//for i in 1..20 do
-    //match i with
-    //| x when x % 5 = 0 && x % 3 = 0 -> string "FizzBuzz" |> printfn "%s"
-    //| x when x % 5 = 0 -> string "Buzz" |> printfn "%s"
-    //| x when x % 3 = 0 -> string "Fizz" |> printfn "%s"
-    //| _ -> string i |> printfn "%s"
+let testForFunc = fun x ->
+    for i in 1..20 do
+        match i with
+        | x when x % 5 = 0 && x % 3 = 0 -> string "FizzBuzz" |> printfn "%s"
+        | x when x % 5 = 0 -> string "Buzz" |> printfn "%s"
+        | x when x % 3 = 0 -> string "Fizz" |> printfn "%s"
+        | _ -> string i |> printfn "%s"
     
     
 let rec resultPrinter = fun i ->
