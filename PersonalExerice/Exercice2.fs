@@ -27,11 +27,8 @@ let testForFunc = fun x ->
         | x when x % 3 = 0 -> string "Fizz" |> printfn "%s"
         | _ -> string i |> printfn "%s"
     
-    
 let rec resultPrinter = fun i ->
-
     printfn ("%s") (fizzBuzz i)
-
     match i with
         | x when x > 20 -> ()
         | _ -> resultPrinter(i + 1)
